@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Responsive HTML and CSS form assignment examples.">
+  <title>Form Assignment — Formfolio</title>
+  <link rel="stylesheet" href="form-assignment.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#top"><span class="wordmark-icon">F</span> FORM<span>FOLIO</span></a>
+    <span class="header-note">HTML + CSS PRACTICE</span>
+  </header>
+
+  <main id="top">
+    <section class="intro">
+      <p class="eyebrow">THE FORM ASSIGNMENT</p>
+      <h1>Good forms make<br><em>things feel simple.</em></h1>
+      <p class="intro-copy">A collection of registration and sign-in form layouts, built with HTML and CSS.</p>
+      <nav class="section-nav" aria-label="Form examples">
+        <a href="#basic-register">01 Register</a><a href="#social-login">02 Sign in</a><a href="#full-registration">03 Details</a><a href="#compact-signup">04 Compact</a><a href="#school-form">05 School event</a>
+      </nav>
+    </section>
+
+    <section class="assignment-section" id="basic-register">
+      <div class="section-heading"><span>01</span><div><p class="eyebrow">SIMPLE REGISTRATION</p><h2>Create your account</h2></div></div>
+      <div class="register-card">
+        <h3>Register</h3>
+        <p class="card-intro">Kindly fill in this form to register.</p>
+        <form class="stack-form" aria-label="Simple registration example">
+          <label for="username">Username</label><input id="username" name="username" type="text" placeholder="Enter username" autocomplete="username">
+          <label for="email">Email</label><input id="email" name="email" type="email" placeholder="Enter email" autocomplete="email">
+          <label for="password">Password</label><input id="password" name="password" type="password" placeholder="Enter password" autocomplete="new-password">
+          <label for="repeat-password">Repeat Password</label><input id="repeat-password" name="repeat-password" type="password" placeholder="Repeat password" autocomplete="new-password">
+          <button class="plain-submit" type="button">Register</button>
+        </form>
+        <p class="login-prompt">Already have an account? <a href="#social-login">Log in</a>.</p>
+      </div>
+    </section>
+
+    <section class="assignment-section" id="social-login">
+      <div class="section-heading"><span>02</span><div><p class="eyebrow">DARK SIGN-IN</p><h2>Welcome back</h2></div></div>
+      <div class="login-demo">
+        <div class="login-art">
+          <div class="social-mark" aria-hidden="true"><span></span></div>
+          <p class="art-kicker">A LITTLE MORE CONNECTED</p>
+          <h3>See everyday moments from your <em>close friends.</em></h3>
+          <div class="memory-stack" aria-hidden="true"><span>✿</span><span>☼</span><span>♡</span></div>
+          <p class="art-caption">Make room for the moments that matter.</p>
+        </div>
+        <div class="login-panel">
+          <p class="eyebrow">MEMBER ACCESS</p><h3>Log in</h3>
+          <form class="dark-form" aria-label="Member login example">
+            <label for="login-id">Email or username</label><input id="login-id" name="login-id" type="text" placeholder="Email, username or mobile number" autocomplete="username">
+            <label for="login-password">Password</label><input id="login-password" name="login-password" type="password" placeholder="Password" autocomplete="current-password">
+            <a class="forgot-link" href="#social-login">Forgot password?</a>
+            <button class="login-button" type="button">Log in</button>
+          </form>
+          <div class="or-divider"><span>OR</span></div>
+          <button class="facebook-button" type="button"><b>f</b> Continue with Facebook</button>
+          <p class="new-account">New here? <a href="#compact-signup">Create an account</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="assignment-section" id="full-registration">
+      <div class="section-heading"><span>03</span><div><p class="eyebrow">FULL REGISTRATION</p><h2>Your details, all in one place</h2></div></div>
+      <div class="full-form-frame">
+        <form class="full-form" aria-label="Personal and identity details example">
+          <h3>Registration</h3>
+          <p class="form-lead">Personal details</p>
+          <div class="field-grid three-columns">
+            <div class="field"><label for="full-name">Full name</label><input id="full-name" type="text" placeholder="Enter your name"></div>
+            <div class="field"><label for="birth-date">Date of birth</label><input id="birth-date" type="date"></div>
+            <div class="field"><label for="full-email">Email</label><input id="full-email" type="email" placeholder="Enter your email"></div>
+            <div class="field"><label for="mobile">Mobile number</label><input id="mobile" type="tel" placeholder="Enter mobile number"></div>
+            <div class="field"><label for="gender">Gender</label><select id="gender"><option value="">Choose gender</option><option>Female</option><option>Male</option><option>Prefer not to say</option></select></div>
+            <div class="field"><label for="occupation">Occupation</label><input id="occupation" type="text" placeholder="Enter occupation"></div>
+          </div>
+          <p class="form-lead identity-lead">Identity details</p>
+          <div class="field-grid three-columns">
+            <div class="field"><label for="id-type">ID type</label><select id="id-type"><option value="">Select ID type</option><option>Passport</option><option>Student ID</option><option>Other</option></select></div>
+            <div class="field"><label for="id-number">ID number</label><input id="id-number" type="text" placeholder="Enter ID number"></div>
+            <div class="field"><label for="issuing-authority">Issue authority</label><input id="issuing-authority" type="text" placeholder="Enter issuing authority"></div>
+          </div>
+          <label class="check-row"><input type="checkbox"> I confirm that the information above is correct.</label>
+          <button class="blue-submit" type="button">Continue registration <span>→</span></button>
+        </form>
+      </div>
+    </section>
+
+    <section class="assignment-section" id="compact-signup">
+      <div class="section-heading"><span>04</span><div><p class="eyebrow">COMPACT SIGN-UP</p><h2>Choose your account type</h2></div></div>
+      <div class="compact-wrap">
+        <form class="compact-card" aria-label="Compact account registration example">
+          <h3>Registration</h3>
+          <div class="account-toggle"><label><input type="radio" name="account-type" checked> Personal</label><label><input type="radio" name="account-type"> Company</label></div>
+          <div class="icon-input"><span aria-hidden="true">✉</span><input type="email" aria-label="Email" placeholder="Email"></div>
+          <div class="icon-input"><span aria-hidden="true">♙</span><input type="text" aria-label="Name" placeholder="Name"></div>
+          <div class="icon-input"><span aria-hidden="true">◇</span><input type="password" aria-label="Password" placeholder="Password"></div>
+          <div class="gender-choice"><label><input type="radio" name="gender-choice"> Male</label><label><input type="radio" name="gender-choice"> Female</label></div>
+          <div class="compact-bottom"><p>By clicking Register, you agree to our <a href="#compact-signup">terms and conditions</a>.</p><button type="button">Register</button></div>
+        </form>
+        <div class="split-card">
+          <div class="welcome-side"><p class="eyebrow">GOOD TO SEE YOU</p><h3>Welcome back!</h3><p>Sign in to pick up where you left off.</p><a href="#social-login">SIGN IN</a></div>
+          <div class="signup-side"><h3>Register with</h3><div class="social-buttons" aria-label="Social sign-up options"><button type="button" aria-label="Google">G+</button><button type="button" aria-label="Facebook">f</button><button type="button" aria-label="GitHub">⌘</button><button type="button" aria-label="LinkedIn">in</button></div><div class="or-divider"><span>OR</span></div><p class="tiny-note">Fill out the following info for registration</p><input aria-label="Name" placeholder="Name"><input type="email" aria-label="Email" placeholder="Email"><input type="password" aria-label="Password" placeholder="Password"><button class="split-register" type="button">Create account</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="assignment-section" id="school-form">
+      <div class="section-heading"><span>05</span><div><p class="eyebrow">SCHOOL EVENT FORM</p><h2>Championship registration</h2></div></div>
+      <div class="event-frame">
+        <form class="event-form" aria-label="School championship registration example">
+          <p class="eyebrow">SCHOOL SPORTS · 2026</p><h3>School Championship<br>Registration Form</h3>
+          <div class="field"><label for="school-name">School name <b>*</b></label><input id="school-name" type="text" required></div>
+          <div class="field"><label>Scholar name <b>*</b></label><div class="name-pair"><input aria-label="Scholar first name" placeholder="First" required><input aria-label="Scholar last name" placeholder="Last" required></div></div>
+          <div class="field"><label>Parent name <b>*</b></label><div class="name-pair"><input aria-label="Parent first name" placeholder="First" required><input aria-label="Parent last name" placeholder="Last" required></div></div>
+          <div class="field"><label for="parent-phone">Parent phone <b>*</b></label><input id="parent-phone" type="tel" placeholder="000 000 0000" required></div>
+          <div class="field"><label for="parent-email">Parent email <b>*</b></label><input id="parent-email" type="email" required></div>
+          <div class="field"><label for="sport">Preferred sport <b>*</b></label><select id="sport" required><option value="">Choose a sport</option><option>Basketball</option><option>Football</option><option>Swimming</option><option>Track and field</option><option>Volleyball</option></select></div>
+          <label class="event-consent"><input type="checkbox" required> A parent or guardian confirms this registration.</label>
+          <button class="event-submit" type="button">Submit registration <span>↗</span></button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>FORMFOLIO · HTML + CSS PRACTICE</span><a href="#top">Back to top ↑</a><span>FORM LAYOUT STUDIES · 2026</span></footer>
+</body>
+</html>
